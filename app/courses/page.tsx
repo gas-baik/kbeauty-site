@@ -38,17 +38,17 @@ export default function Courses() {
     <main className="min-h-screen bg-pink-50">
       <header className="bg-white shadow-sm">
         <div className="max-w-6xl mx-auto px-4 py-4">
-          <a href="/" className="text-2xl font-bold text-pink-500">K-Beauty Korea</a>
+          <a href="/" className="text-2xl font-bold text-pink-500">K-Beauty Seoul</a>
         </div>
       </header>
 
-      <div className="max-w-6xl mx-auto px-4 py-16">
-        <h2 className="text-4xl font-bold text-gray-800 mb-4">K-Beauty Courses</h2>
+      <div className="max-w-6xl mx-auto px-4 py-12">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">K-Beauty Courses</h2>
         <p className="text-gray-500 mb-10">Find the perfect beauty course for your skin type</p>
 
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {courses.map((course) => (
-            <div key={course.id} className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-all">
+            <div key={course.id} className="bg-white rounded-2xl p-6 md:p-8 shadow-sm hover:shadow-md transition-all">
               <span className="bg-pink-100 text-pink-500 text-sm px-3 py-1 rounded-full">
                 {course.skin_type} Skin
               </span>
