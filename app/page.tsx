@@ -56,21 +56,21 @@ export default function Home() {
 
       <section className="max-w-6xl mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="bg-white rounded-2xl p-8 text-center shadow-sm">
+          <a href="/diagnosis" className="bg-white rounded-2xl p-8 text-center shadow-sm hover:shadow-md transition-all cursor-pointer">
             <div className="text-4xl mb-4">🔬</div>
             <h3 className="text-xl font-bold mb-2">{t.f1title}</h3>
             <p className="text-gray-500">{t.f1desc}</p>
-          </div>
-          <div className="bg-white rounded-2xl p-8 text-center shadow-sm">
+          </a>
+          <a href="/courses" className="bg-white rounded-2xl p-8 text-center shadow-sm hover:shadow-md transition-all cursor-pointer">
             <div className="text-4xl mb-4">✨</div>
             <h3 className="text-xl font-bold mb-2">{t.f2title}</h3>
             <p className="text-gray-500">{t.f2desc}</p>
-          </div>
-          <div className="bg-white rounded-2xl p-8 text-center shadow-sm">
+          </a>
+          <a href="/shops" className="bg-white rounded-2xl p-8 text-center shadow-sm hover:shadow-md transition-all cursor-pointer">
             <div className="text-4xl mb-4">📍</div>
             <h3 className="text-xl font-bold mb-2">{t.f3title}</h3>
             <p className="text-gray-500">{t.f3desc}</p>
-          </div>
+          </a>
         </div>
       </section>
     </main>
